@@ -135,5 +135,5 @@ My Monero Wallet Address:
 
 1. [monero](https://web.getmonero.org/)
 1. [c3pool](https://c3pool.com/#/dashboard)
-1. [profit-switching-miner](https://github.com/C3Pool/profit-switching-miner)
+1. [profit-switching-miner](https://github.com/C3Pool)
 1. [cpulimit](https://github.com/opsengine/cpulimit/)
