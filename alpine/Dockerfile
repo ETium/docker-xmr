@@ -17,7 +17,6 @@ RUN apk add --no-cache build-base \
     &&  cd /root \
     &&  wget --no-check-certificate -c https://github.com/C3Pool/xmrig-C3/releases/download/${XMRIG_VERSION}/xmrig-${XMRIG_VERSION}-linux-Static.tar.gz?raw=true -O xmrig-${XMRIG_VERSION}-linux-Static.tar.gz \
     &&  tar zxvf xmrig-${XMRIG_VERSION}-linux-Static.tar.gz  \
-    &&  cd xmrig-${XMRIG_VERSION}-linux-Static \
     &&  cp xmrig /usr/bin/ \
     &&  mkdir -p /etc/xmrig \
     &&  cp config.json /etc/xmrig \
@@ -26,7 +25,7 @@ RUN apk add --no-cache build-base \
     &&  rm v${CPULIMIT_VERSION}.tar.gz \
     &&  rm -rf cpulimit-${CPULIMIT_VERSION} \
     &&  rm xmrig-${XMRIG_VERSION}-linux-Static.tar.gz  \
-    &&  rm -rf xmrig-${XMRIG_VERSION}-linux-Static \
+    &&  rm -rf xmrig config.json \
     &&  rm -rf /tmp/* /var/cache/apk/*
 
 COPY docker-entrypoint.sh /usr/local/bin/
