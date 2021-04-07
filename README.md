@@ -1,5 +1,5 @@
 # docker-xmr
-[![xmr](http://dockeri.co/image/snowdream/xmr)](https://hub.docker.com/r/snowdream/xmr)
+[![xmr](http://dockeri.co/image/dockerinstyle/xmr)](https://hub.docker.com/r/dockerinstyle/xmr)
 
 docker images for xmr、monero
 
@@ -15,7 +15,7 @@ systemctl enable docker
 ```
 
 ## Usage
-1. Copy [config.json](https://github.com/snowdream/docker-xmr/blob/master/config.json) to /etc/xmrig/config.json.
+1. Copy [config.json](https://github.com/ETium/docker-xmr/blob/master/config.json) to /etc/xmrig/config.json.
 
 2. Edit /etc/xmrig/config.json.
 
@@ -27,7 +27,7 @@ systemctl enable docker
 
 ```bash
             "url": "mine.c3pool.com:13333",
-            "user": "46PtMFqfymhcHchS7vwjwoMm9v8jyvK6xMZKygZh8nk3LLoRg4jq7sKa9c22bXvfQ8KWogR1DETzVTsAuGffjaBtHVPZ4gs",
+            "user": "47r6nK6Xz8aLR1A9EL1mUUPKmqVRjNrdWZYE3UahiBMmhdzGyszPVnmTm7JqUs9tYeGUXq1X5hRK2NWijQkRWJqk8cnUxKp",
             "pass": "rig01:rig01@gmail.com",
 ```
 
@@ -38,13 +38,13 @@ systemctl enable docker
 3. Run the docker container xmr in your vps server.
 
 ```bash
-docker run --restart=always --network host -d -v /etc/xmrig/config.json:/etc/xmrig/config.json --name xmr snowdream/xmr
+docker run --restart=always --network host -d -v /etc/xmrig/config.json:/etc/xmrig/config.json --name xmr dockerinstyle/xmr
 ```
 
 The cpu usage is limited to 90% by default. If you want to change it,pass it with CPU_USAGE.[0 - 100]
 
 ```bash
-docker run --restart=always --network host -d -v /etc/xmrig/config.json:/etc/xmrig/config.json -e CPU_USAGE=100 --name xmr snowdream/xmr
+docker run --restart=always --network host -d -v /etc/xmrig/config.json:/etc/xmrig/config.json -e CPU_USAGE=100 --name xmr dockerinstyle/xmr
 ```
 
 ## View
@@ -125,19 +125,11 @@ Outputs：
 [2020-02-10 08:18:04.245]  cpu  accepted (28/0) diff 224 (56 ms)
 ```
 
-## Recommend VPS
-
-[![tnahosting](https://tnahosting.net/images/logo.png)](https://tnahosting.net/billing/aff.php?aff=133)
-
-[![vultr](https://www.vultr.com/media/banners/banner_728x90.png)](https://www.vultr.com/?ref=8386300-6G)
-
-[![bandwagonhost](https://bwh88.net/templates/organicbandwagon/images/banner1.jpg)](https://bwh88.net/aff.php?aff=41583)
-
 ## Donate
 
 My Monero Wallet Address:
 
-46PtMFqfymhcHchS7vwjwoMm9v8jyvK6xMZKygZh8nk3LLoRg4jq7sKa9c22bXvfQ8KWogR1DETzVTsAuGffjaBtHVPZ4gs
+47r6nK6Xz8aLR1A9EL1mUUPKmqVRjNrdWZYE3UahiBMmhdzGyszPVnmTm7JqUs9tYeGUXq1X5hRK2NWijQkRWJqk8cnUxKp
 
 ## Reference
 
